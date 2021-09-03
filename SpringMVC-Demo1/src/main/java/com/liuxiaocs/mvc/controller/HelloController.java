@@ -14,4 +14,9 @@ public class HelloController {
         // 去掉前缀和后缀即可获取视图名称
         return "index";
     }
+
+    @RequestMapping("/target")
+    public String toTarget() {
+        return "target";
+    }
 }
