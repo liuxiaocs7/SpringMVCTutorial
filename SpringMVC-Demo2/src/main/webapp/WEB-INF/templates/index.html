@@ -11,9 +11,13 @@
     <!--a th:href="@{/hello/testRequestMapping}">测试RequestMapping注解的位置</a>-->
 
     <!--测试RequestMapping注解的value属性-->
-    <a th:href="@{/testRequestMapping}">测试RequestMapping注解的位置-->/testRequestMapping</a>
-    <a th:href="@{/test}">测试RequestMapping注解的value属性-->/test</a>
+    <a th:href="@{/testRequestMapping}">测试RequestMapping注解的位置-->/testRequestMapping</a><br>
+    <a th:href="@{/test}">测试RequestMapping注解的value属性-->/test</a><br>
+    <a th:href="@{/test}">测试RequestMapping注解的method属性-->GET</a><br>
 
-    《
+    <form th:action="@{/test}" method="post">
+        <input type="submit" value="测试RequestMapping注解的method属性-->POST">
+    </form>
+    <a th:href="@{/testGetMapping}">测试GetMapping注解-->/testGetMapping</a><br>
 </body>
 </html>
