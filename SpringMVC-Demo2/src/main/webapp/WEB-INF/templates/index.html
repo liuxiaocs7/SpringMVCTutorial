@@ -6,5 +6,14 @@
 </head>
 <body>
     <h1>首页</h1>
+    <!--上面的一种方式是找不到资源的-->
+    <!--<a th:href="@{/testRequestMapping}">测试RequestMapping注解的位置</a>-->
+    <!--a th:href="@{/hello/testRequestMapping}">测试RequestMapping注解的位置</a>-->
+
+    <!--测试RequestMapping注解的value属性-->
+    <a th:href="@{/testRequestMapping}">测试RequestMapping注解的位置-->/testRequestMapping</a>
+    <a th:href="@{/test}">测试RequestMapping注解的value属性-->/test</a>
+
+    《
 </body>
 </html>
